@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="icon" href="Logo.png~" type="image/png">
+</head>
+<body>
+    <!-- TOP SECTION AND NAV BAR LOCATED BELOW-->
+    <div id="call-today-bar">Call today (435) 279-3584</div>
+    <div id="hero-bar">
+        <div id="hero-logo"><img src="Logo.png~"></div>
+        <div id="hero-button-bar">
+            <button div="home-button" class="hero-buttons" onclick="document.getElementById('call-today-bar').scrollIntoView({behavior: 'smooth'})">
+                <i class="fi fi-rs-house-chimney"></i>
+                Home
+            </button>
+            <button div="tint-button" class="hero-buttons" data-section="tinting-container" onclick="scrollToSection('tinting-container')">
+                <i class="fi fi-rs-car-side"></i>
+                Window Tint
+            </button>
+            <button div="location-button" class="hero-buttons" data-section="location-container" onclick="scrollToSection('tinting-container')">
+                <i class="fi fi-rs-marker"></i>
+                Location
+            </button>
+            <button div="contact-button" class="hero-buttons" onclick="document.getElementById('bottom-section').scrollIntoView({behavior: 'smooth'})">
+                <i class="fi fi-rs-phone-call"></i>
+                Contact Us
+            </button>
+            <button div="repair-button" class="hero-buttons" data-section="repair-container" onclick="scrollToSection('repair-container')">
+                <img src="windshield.png">
+                Window Repair
+            </button>
+        </div>
+    </div>
+    <!-- FIRST CONTAINER LOCATED BELOW-->
+    <div id="first-container">
+        <div id="first-container-left">
+            <p id="first-container-header">
+                Your Auto Glass Repair & Replacement Specialists 
+            </p>
+        </div>
+        <div id="first-container-right">
+            <button id="quote-button">Get a free Quote</button>
+        </div>
+    </div>
+    <!--LOCATION CONTAINER BELOW-->
+    <div id="location-container" class="content-section">
+        <div id="location-container-left">
+            <p id="located-at">We are located at</p>
+            <p id="location-address">805 West Main St Ste H Tremonton, UT 84337</p>
+        </div>
+        <div id="location-container-right"><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.436330853957!2d-112.1803865235475!3d41.71110257585284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875499a7f1cfffff%3A0x6743c9dc7f62b7!2s805%20W%20Main%20St%20STE.%20H%2C%20Tremonton%2C%20UT%2084337!5e0!3m2!1sen!2sus!4v1727306718062!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <!-- TINTING CONTAINER BELOW-->
+     <div id="tinting-container" class="content-section">
+        <div id="ceramic-box">
+            <div id="ceramic-header">High Tech Ceramic Window Tinting</div>
+            <div id="ceramic-bio">High tech ceramic tinting is a premium window film that uses non-metal, non-conductive ceramic particles to block UV rays, heat, and glare. It offers superior performance in terms of heat rejection, reducing the interior temperature significantly while maintaining a clear view from the inside. Ceramic tints do not interfere with electronic signals such as GPS, mobile devices, or radios, making them ideal for modern vehicles. They also provide excellent UV protection, blocking up to 99% of harmful rays, which helps protect both passengers and the car’s interior from fading</div>
+        </div>
+        <div id="carbon-box">
+            <div id="carbon-header">Carbon Tinting</div>
+            <div id="carbon-bio">Carbon tinting is a durable, non-metallic option that uses carbon particles to create a matte finish. It offers effective heat and UV protection, keeping the interior cool while preventing sun damage. Unlike metallic films, carbon tint doesn’t interfere with electronic signals, and its deep color provides a sleek, non-reflective look. Carbon tints are known for their long-lasting quality, as they resist fading over time. Although they don’t block as much heat as ceramic tints, they are a cost-effective alternative with solid overall performance</div>
+        </div>
+     </div>
+     <!--REPAIR CONTAINER BELOW-->
+     <div id="repair-container" class="content-section">
+        <div id="repair-left-box">
+            <div id="repair-header">Here at Bear River Auto Glass we cover a wide variety of repairs such as</div>
+            <div id="repair-list">  - Windshield replacement <br>
+                                    - Door Glass replacement <br>
+                                    - Rock Chip Repair <br>
+                                    - Removal and installe <br>
+                                    - and much more</div>
+        </div>
+        <div id="repair-right-box">
+            <div id="repair-hook"> For more info call us or get a free quote!</div>
+            <div id="repair-info-box">
+                <p id="repair-phone">(435) 279-3584</p>
+                <button id="quote-button">Get a free Quote</button>
+            </div>
+        </div>
+     </div>
+    <!-- TESTIMONIAL CONTAINER BELOW-->
+    <div id=testimonial-container>
+        <div id="testimonial-header">
+            <p id="testimonial-head">Customer Testimonials</p>
+        </div>
+        <div id="testimonial-section">
+            <div id="testimonial-box-one" class="testimonial-boxes">
+                <div class="rating"><i class="fi fi-rs-star"> 5/5</i></div>
+                <div class="review">Bear River Auto Glass did an amazing job in replacing my windshield as well as pointing out where the major errors the previous installer had made that could have resulted in a loss of life if I had been in an accident. They are very knowledgeable and took extra great care of me and my vehicle.</div>
+            </div>
+            <div id="testimonial-box-two" class="testimonial-boxes">
+                <div class="rating"><i class="fi fi-rs-star"> 5/5</i></div>
+                <div class="review">They replaced two windows for me and tinted them to match the rest of my car. They made sure to get all the glass out from the previous broken window that had fallen all over in my car. We were able to wait in their comfortable waiting room. They had all the streaming services and were very accommodating. I felt like they did an amazing job and had very good customer service. Would highly recommended!</div>
+            </div>
+            <div id="testimonial-box-three" class="testimonial-boxes">
+                <div class="rating"><i class="fi fi-rs-star"> 5/5</i></div>
+                <div class="review">While traveling state to state with my three dogs, I unfortunately hit a pheasant on the freeway. I was LUCKY (as lucky gets when hitting animals) to have hit it a just few miles out from Tremonton and Bear River. It was a Saturday afternoon and they went above and beyond to help get my windshield replaced and get me back on the road or I’d have been stuck in Utah till Monday. They are genuinely good people and a great business!</div>
+            </div>
+        </div>
+        <div id="testimonial-names">
+            <div class="customer-names">Nolan Sprosty ~ Google Reviews</div>
+            <div class="customer-names">Richelle Keate ~ Google Reviews</div>
+            <div class="customer-names">Aiyana Tran ~ Google Reviews</div>
+        </div>
+    </div>
+    <!-- BOTTOM SECTION LOCATED HERE-->
+     <div id="bottom-section">
+        <div id="bottom-left" class="bottom-sides">
+            <p id="contact-here">Contact Us</p>
+            <p id="phone-number" class="contact-info">(435) 279-3584</p>
+            <p id="email" class="contact-info"><a id="email-anchor" href="mailto:BearRiverAutoGlass.com">BearRiverAutoGlass.com</a>
+            </p>
+        </div>
+        <div id="bottom-right" class="bottom-sides">
+            <div id="right-bottom-top">
+                <p id="service-name">Services</p>
+            </div>
+            <div id="right-bottom-bottom">
+                <div class="service-boxes">
+                    <p class="service-list">Windshield Replacement</p>
+                    <p class="service-list">Vent Glass</p>
+                    <p class="service-list">Door Glass</p>
+                </div>
+                <div class="service-boxes">
+                    <p class="service-list">Quarter Glass</p>
+                    <p class="service-list">Back Glass</p>
+                    <p class="service-list">Sunroof</p>
+                </div>
+                <div class="service-boxes">
+                    <p class="service-list">Remove and Install</p>
+                    <p class="service-list">RV/Motorhome</p>
+                    <p class="service-list">Semi</p>
+                </div>
+                <div class="service-boxes">
+                    <p class="service-list">Window Regulator</p>
+                    <p class="service-list">Rock Chip Repair</p>
+                    <p class="service-list">Headlight Restoration</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

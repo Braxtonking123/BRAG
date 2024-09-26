@@ -1,0 +1,582 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+body{
+    height: auto;
+    width: 99%;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* TOP SECTION AND NAV BAR BELOW HERE */
+#call-today-bar{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+#hero-bar{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+    #hero-logo{
+        width: 20%;
+        height: 100%;
+        background: transparent;
+        margin-right: 109px;
+    }
+        #hero-logo img{
+            width: 100%;
+            height: 100%;
+        }
+    #hero-button-bar{
+        width: 50%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        gap: 30px;
+    }
+        .hero-buttons{
+            width: 100px;
+            height: 100%;
+            border: none;
+            border-right: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: transparent;
+            transition: 1.2s;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .hero-buttons:hover{
+            transform: scale(1.1);
+            color: red;
+        }
+            i.fi.fi-rs-house-chimney {
+                font-size: 25px;
+                color: black;
+            }
+            i.fi.fi-rs-car-side {
+                font-size: 30px;
+                color: black;
+            }
+            i.fi.fi-rs-marker{
+                font-size: 25px;
+                color: black;
+            }
+            i.fi.fi-rs-phone-flip{
+                font-size: 25px;
+                color: black;
+            }
+            i.fi.fi-rs-users{
+                font-size: 25px;
+                color: black;
+            }
+            .hero-buttons img{
+                width: 35px;
+                height: 35px;
+            }
+/* FIRST CONTAINER LOCATED BELOW */
+#first-container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    background-image: url("shattered-glass.jpg");
+    background-size: cover;
+}
+    #first-container-left{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.411);
+    }
+        #first-container-header{
+            width: 50%;
+            height: 50%;
+            font-size: 60px;
+            font-weight: bold;
+        }
+    #first-container-right{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #quote-button{
+            width: 300px;
+            height: 60px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 30px;
+            transition: 1.3s;
+        }
+            #quote-button:hover{
+                transform: scale(1.1);
+            }
+/* LOCATION CONTAINER BELOW */
+#location-container{
+    width: 100%;
+    height: 700px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+    #location-container-left{
+        width: 30%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        #located-at{
+            width: 50%;
+            height: 10%;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #location-address{
+            width: 50%;
+            height: 30%;
+            font-size: 25px;
+        }
+    #location-container-right{
+        width: 50%;
+        height: 90%;
+        border: 1px solid black;
+    }
+        #map{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+/* TINTING CONTAINER BELOW */
+#tinting-container{
+    width: 100%;
+    height: 500px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+    #ceramic-box{
+        height: 90%;
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        background: rgba(0, 0, 0, 0.253);
+    }
+        #ceramic-header{
+            width: 100%;
+            height: 20%;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+        #ceramic-bio{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            font-size: 25px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    #carbon-box{
+        height: 90%;
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        background: rgba(0, 0, 0, 0.253);
+    }
+        #carbon-header{
+            width: 100%;
+            height: 20%;
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+        #carbon-bio{
+            width: 90%;
+            height: 80%;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+/* REPAIR CONTAINER BELOW */
+#repair-container{
+    width: 100%;
+    height: 600px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+    #repair-left-box{
+        width: 45%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.253);
+    }
+        #repair-header{
+            width: 60%;
+            height: 20%;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        #repair-list{
+            width: 60%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            
+        }
+    #repair-right-box{
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.253);
+    }
+        #repair-hook{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        #repair-info-box{
+            width: 100%;
+            height: 40%;
+            text-align: center;
+        }
+            #repair-phone{
+                font-size: 25px;
+            }
+/* TESTIMONIAL CONTAINER */
+#testimonial-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    #testimonial-header{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #testimonial-head{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    #testimonial-section{
+        width: 80%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+        .testimonial-boxes{
+            width: 30%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+            .rating{
+                width: 100%;
+                height: 20%;
+                text-align: center;
+                font-size: 20px;
+            }
+            .review{
+                width: 90%;
+                height: 80%;
+                text-align: center;
+                font-size: 20px;
+            }
+    #testimonial-names{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+        .customer-names{
+            width: 30%;
+            height: 90%;
+            text-align: center;
+            font-size: 25px;
+        }
+            i.fi.fi-rs-star{
+                font-size: 30px;
+            }
+
+
+/* BOTTOM SECTION BELOW HERE */
+#bottom-section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+    .bottom-sides{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        #bottom-left{
+            width: 30%;
+        }
+            #contact-here{
+                font-size: 30px;
+                text-decoration: underline;
+                color: white;
+            }
+            #phone-number{
+                font-size: 25px;
+                color: white;
+            }
+            #email{
+                font-size: 25px;
+                color: white;
+            }
+            #email-anchor{
+                color: red;
+            }
+        #bottom-right{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+            #right-bottom-top{
+                width: 100%;
+                height: 20%;
+            }
+                #service-name{
+                    font-size: 30px;
+                    text-decoration: underline;
+                    color: white;
+                }
+            #right-bottom-bottom{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+            }
+                #service-boxes{
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                    .service-list{
+                        color: white;
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    #call-today-bar {
+        font-size: 20px;
+        padding: 15px 0; /* Vertical padding */
+        margin-bottom: 15px; /* Space below the bar */
+    }
+
+    #hero-bar {
+        height: auto;
+        padding: 15px 0; /* Vertical padding */
+        margin-bottom: 20px; /* Space below hero bar */
+    }
+
+    #first-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px; /* Added padding around the container */
+        margin-bottom: 30px; /* Space below first container */
+    }
+
+    #first-container-left,
+    #first-container-right {
+        width: 100%;
+        padding: 15px; /* Padding inside */
+        margin-bottom: 100px; /* Space between left and right containers */
+    }
+
+    #first-container-header {
+        font-size: 40px;
+        margin-bottom: 20px; /* Space below the header */
+    }
+
+    #quote-button {
+        width: 90%;
+        font-size: 24px;
+        margin-top: 15px; /* Space above the button */
+    }
+
+    #location-container {
+        padding: 20px; /* Padding for overall container */
+        margin-bottom: 30px; /* Space below location container */
+    }
+
+    #location-container-left,
+    #location-container-right {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 25px; /* Space between left and right location containers */
+    }
+
+    #tinting-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px; /* Padding around the container */
+        margin-bottom: 30px; /* Space below tinting container */
+    }
+
+    #ceramic-box,
+    #carbon-box {
+        width: 90%;
+        margin-bottom: 20px; /* Space between tinting boxes */
+    }
+    #carbon-header,
+    #ceramic-header{
+        font-size: 20px;
+    }
+    #carbon-bio,
+    #ceramic-bio{
+        font-size: 15px;
+    }
+    #repair-container {
+        padding: 30px; /* Padding for repair container */
+        margin-bottom: 30px; /* Space below repair container */
+    }
+
+    #repair-left-box,
+    #repair-right-box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Space between repair boxes */
+    }
+    #testimonial-container {
+        padding: 30px; /* Padding around testimonial section */
+        margin-bottom: 30px;
+    }
+    #testimonial-section {
+        flex-direction: column;
+    }
+    .testimonial-boxes {
+        width: 90%;
+        margin-bottom: 20px; /* Space below each testimonial box */
+    }
+    #testimonial-head{
+        display: none;
+    }
+    .review{
+        font-size: 15px;
+    }
+    #testimonial-names{
+        display: none;
+    }
+    #bottom-section {
+        flex-direction: column;
+        height: auto;
+        gap: 20px; /* Space between sections */
+        padding: 30px; /* Padding around the bottom section */
+    }
+
+    #bottom-left, 
+    #bottom-right {
+        width: 100%;
+        padding: 15px; /* Padding to left and right sections */
+    }
+    #right-bottom-top{
+        display: none;
+    }
+    #right-bottom-bottom {
+        flex-direction: column;
+        gap: 20px; /* Space between service boxes */
+        display: none;
+    }
+
+    #service-boxes {
+        width: 90%;
+        margin-bottom: 20px; /* Space below each service box */
+    }
+}
+
