@@ -186,9 +186,14 @@ html{
     justify-content: center;
     gap: 20px;
 }
+    #tint-image{
+        width: 25%;
+        height: auto;
+        border-radius: 5px;
+    }
     #ceramic-box{
         height: 90%;
-        width: 37%;
+        width: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -198,7 +203,7 @@ html{
     }
         #ceramic-header{
             width: 100%;
-            height: 20%;
+            height: 10%;
             font-size: 30px;
             display: flex;
             align-items: center;
@@ -208,16 +213,25 @@ html{
         }
         #ceramic-bio{
             width: 90%;
-            height: 80%;
+            height: 70%;
             display: flex;
-            font-size: 25px;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #ceramic-percents{
+            width: 90%;
+            height: 10%;
+            display: flex;
+            font-size: 20px;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
     #carbon-box{
         height: 90%;
-        width: 37%;
+        width: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -227,7 +241,7 @@ html{
     }
         #carbon-header{
             width: 100%;
-            height: 20%;
+            height: 10%;
             font-size: 30px;
             text-align: center;
             display: flex;
@@ -238,9 +252,18 @@ html{
         }
         #carbon-bio{
             width: 90%;
-            height: 80%;
-            font-size: 25px;
+            height: 70%;
+            font-size: 20px;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #carbon-percents{
+            width: 90%;
+            height: 10%;
+            display: flex;
+            font-size: 20px;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -255,7 +278,7 @@ html{
     flex-direction: column;
 }
     #repair-container-top{
-        width: 90%;
+        width: 95%;
         height: 65%;
         display: flex;
         align-items: center;
@@ -263,7 +286,7 @@ html{
         flex-direction: row;
     }
         #repair-left-box{
-            width: 42%;
+            width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -281,9 +304,10 @@ html{
                 #rockchip-main-img{
                     width: auto;
                     height: 100%;
+                    border-radius: 5px;
                 }
         #repair-right-box{
-            width: 42%;
+            width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -309,7 +333,7 @@ html{
                     font-size: 25px;
                 }
         #repair-container-bottom{
-            width: 90%;
+            width: 95%;
             height: 30%;
             display: flex;
             align-items: center;
@@ -317,7 +341,7 @@ html{
             flex-direction: column;
         }
             #repair-description-header{
-                width: 84%;
+                width: 100%;
                 height: 20%;
                 display: flex;
                 align-items: center;
@@ -329,7 +353,7 @@ html{
 
                 }
             #repair-content-container{
-                width: 84%;
+                width: 100%;
                 height: 80%;
                 display: flex;
                 align-items: center;
