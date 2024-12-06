@@ -248,51 +248,114 @@ html{
 /* REPAIR CONTAINER BELOW */
 #repair-container{
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-    #repair-left-box{
-        width: 45%;
-        height: 80%;
+    #repair-container-top{
+        width: 90%;
+        height: 65%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.253);
+        justify-content: center;
+        flex-direction: row;
     }
-        #repair-img-container{
-            width: 70%;
-            height: 70%;
-            border: 1px solid black;
+        #repair-left-box{
+            width: 42%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.253);
         }
-    #repair-right-box{
-        width: 30%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.253);
-    }
-        #repair-hook{
-            width: 100%;
+            #repair-img-container{
+                width: 70%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                #rockchip-main-img{
+                    width: auto;
+                    height: 100%;
+                }
+        #repair-right-box{
+            width: 42%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.253);
+        }
+            #repair-hook{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 30px;
+            }
+            #repair-info-box{
+                width: 100%;
+                height: 40%;
+                text-align: center;
+            }
+                #repair-phone{
+                    font-size: 25px;
+                }
+        #repair-container-bottom{
+            width: 90%;
             height: 30%;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            font-size: 30px;
+            flex-direction: column;
         }
-        #repair-info-box{
-            width: 100%;
-            height: 40%;
-            text-align: center;
-        }
-            #repair-phone{
-                font-size: 25px;
+            #repair-description-header{
+                width: 84%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.253);
             }
+                #repair-header{
+                    font-size: 25px;
+
+                }
+            #repair-content-container{
+                width: 84%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                background: rgba(0, 0, 0, 0.253);
+            }
+                #repairs-box-left,#repairs-box-right{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                    .repairs-headers{
+                        width: 100%;
+                        height: 33.3%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                        .repairs-header-content{
+                            font-size: 20px;
+                            font-weight: lighter;
+                        }
 /* TESTIMONIAL CONTAINER */
 #testimonial-container{
     width: 100%;
@@ -533,19 +596,13 @@ html{
                 flex-direction: row;
                 gap: 5%;
             }
-                .image-containers{
-                    width: 45%;
-                    height: 100%;
-                    border: 1px solid black;
-                }
                 .bio-containers{
-                    width: 45%;
+                    width: 90%;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    border: 1px solid black;
                 }
                     .bio-header{
                         width: 100%;
@@ -555,7 +612,6 @@ html{
                         justify-content: center;
                         color: black;
                         font-size: 30px;
-                        border: 1px solid black;
                     }
                     .bio-content{
                         width: 100%;
@@ -566,14 +622,9 @@ html{
                         text-align: center;
                         color: black;
                         font-size: 25px;
-                        border: 1px solid black;
                     }
     #services-two, #services-three, #services-four, #services-five, #services-six, #services-seven, #services-eight, #services-nine, #services-ten, #services-eleven, #services-twelve, #services-thirteen, #services-fourteen{
         display: none;
-    }
-    .service-images{
-        width: auto;
-        height: 100%;
     }
             
 
