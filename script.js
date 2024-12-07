@@ -18,12 +18,43 @@ document.querySelectorAll('.hero-buttons').forEach(button => {
     });
 });
 
-document.getElementById('service-page-button').addEventListener('click', () => {
-    // New functionality for the service page button
-    window.location.href = 'services.html'; // Navigate to a dedicated services page
+
+// Wait for the DOM to load
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all service buttons and corresponding content boxes
+    const serviceButtons = document.querySelectorAll('.service-buttons');
+    const serviceContents = document.querySelectorAll('.services-content-boxes');
+
+    // Hide all content boxes initially, except the first one
+    serviceContents.forEach((content, index) => {
+        content.style.display = index === 0 ? 'flex' : 'none';
+    });
+
+    // Add event listeners to each button
+    serviceButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            // Hide all service content boxes
+            serviceContents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Generate the ID dynamically based on your existing naming convention
+            const selectedContentId = `services-${numberToWord(index + 1)}`;
+            const selectedContent = document.getElementById(selectedContentId);
+            if (selectedContent) {
+                selectedContent.style.display = 'flex';
+            }
+        });
+    });
+
+    // Helper function to convert numbers to words (1 -> "one", 2 -> "two", etc.)
+    function numberToWord(number) {
+        const words = [
+            "one", "two", "three", "four", "five", "six", 
+            "seven", "eight", "nine", "ten", "eleven", "twelve"
+        ];
+        return words[number - 1] || "";
+    }
 });
-
-console.log(`Button clicked: ${this.id}, Showing section: ${sectionToShow}`);
-
 
 

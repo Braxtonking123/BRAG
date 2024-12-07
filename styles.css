@@ -705,150 +705,146 @@ html{
                         color: black;
                         font-size: 25px;
                     }
-    #services-two, #services-three, #services-four, #services-five, #services-six, #services-seven, #services-eight, #services-nine, #services-ten, #services-eleven, #services-twelve, #services-thirteen, #services-fourteen{
+    #services-one,#services-two, #services-three, #services-four, #services-five, #services-six, #services-seven, #services-eight, #services-nine, #services-ten, #services-eleven, #services-twelve, #services-thirteen, #services-fourteen{
         display: none;
     }
-    /*ADAS SECTION BELOW */
-    #ADAS-section{
+    /*CALIBRATION SECTION BELOW */
+    #calibration-anchor{
+        color: black;
+        text-decoration: none;
+    }
+    #calibration-section{
         width: 100%;
-        height: 700px;
-        border: 1px solid black;
-    }
-
-
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    body {
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    #call-today-bar {
-        font-size: 20px;
-        padding: 15px 0; /* Vertical padding */
-        margin-bottom: 15px; /* Space below the bar */
-    }
-
-    #hero-bar {
-        height: auto;
-        padding: 15px 0; /* Vertical padding */
-        margin-bottom: 20px; /* Space below hero bar */
-    }
-
-    #first-container {
-        flex-direction: column;
-        height: auto;
-        padding: 20px; /* Added padding around the container */
-        margin-bottom: 30px; /* Space below first container */
-    }
-
-    #first-container-left,
-    #first-container-right {
-        width: 100%;
-        padding: 15px; /* Padding inside */
-        margin-bottom: 100px; /* Space between left and right containers */
-    }
-
-    #first-container-header {
-        font-size: 40px;
-        margin-bottom: 20px; /* Space below the header */
-    }
-
-    #quote-button {
-        width: 90%;
-        font-size: 24px;
-        margin-top: 15px; /* Space above the button */
-    }
-
-    #location-container {
-        padding: 20px; /* Padding for overall container */
-        margin-bottom: 30px; /* Space below location container */
-    }
-
-    #location-container-left,
-    #location-container-right {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 25px; /* Space between left and right location containers */
-    }
-
-    #tinting-container {
-        flex-direction: column;
+        height: 1100px;
+        display: flex;
         align-items: center;
-        padding: 30px; /* Padding around the container */
-        margin-bottom: 30px; /* Space below tinting container */
+        justify-content: center;
+        flex-direction: column;
     }
+        #calibration-header-container{
+            width: 75%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #calibration-header{
+                font-size: 35px;
+                text-decoration: underline;
+            }
+        #calibration-content-container{
+            width: 75%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+            .calibration-boxes{
+                width: 33.3%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+                .calibration-services{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+                    .calibration-service-headers{
+                        font-size: 20px;
+                        text-decoration: underline;
+                    }
+                    .calibration-service-bios{
+                        font-size: 15px;
+                        width: 95%;
+                    }
 
-    #ceramic-box,
-    #carbon-box {
-        width: 90%;
-        margin-bottom: 20px; /* Space between tinting boxes */
-    }
-    #carbon-header,
-    #ceramic-header{
-        font-size: 20px;
-    }
-    #carbon-bio,
-    #ceramic-bio{
-        font-size: 15px;
-    }
-    #repair-container {
-        padding: 30px; /* Padding for repair container */
-        margin-bottom: 30px; /* Space below repair container */
-    }
+/*BUFFER SECTION */
+#buffer-section{
+    width: 100%;
+    height: 100px;
+}
 
-    #repair-left-box,
-    #repair-right-box {
+
+/* MOBILE RESPOSIVNESS */
+/* Adjusting for smaller screen sizes */
+@media (max-width: 768px) {
+    #hero-bar{
         width: 100%;
-        height: auto;
-        margin-bottom: 20px; /* Space between repair boxes */
-    }
-    #testimonial-container {
-        padding: 30px; /* Padding around testimonial section */
-        margin-bottom: 30px;
-    }
-    #testimonial-section {
+        height: 600px;
         flex-direction: column;
-    }
-    .testimonial-boxes {
-        width: 90%;
-        margin-bottom: 20px; /* Space below each testimonial box */
-    }
-    #testimonial-head{
-        display: none;
-    }
-    .review{
-        font-size: 15px;
-    }
-    #testimonial-names{
-        display: none;
-    }
-    #bottom-section {
-        flex-direction: column;
-        height: auto;
-        gap: 20px; /* Space between sections */
-        padding: 30px; /* Padding around the bottom section */
-    }
-
-    #bottom-left, 
-    #bottom-right {
-        width: 100%;
-        padding: 15px; /* Padding to left and right sections */
-    }
-    #right-bottom-top{
-        display: none;
-    }
-    #right-bottom-bottom {
-        flex-direction: column;
-        gap: 20px; /* Space between service boxes */
-        display: none;
-    }
-
-    #service-boxes {
-        width: 90%;
-        margin-bottom: 20px; /* Space below each service box */
     }
 }
 
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    #review-button {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    #call-today-bar {
+        font-size: 16px;
+    }
+
+    #hero-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #hero-logo {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .hero-buttons {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    #testimonial-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial-boxes {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #bottom-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bottom-sides {
+        width: 100%;
+    }
+
+    #contact-here {
+        font-size: 18px;
+    }
+
+    #phone-number, #email {
+        font-size: 18px;
+    }
+
+    #facebook-bottom {
+        font-size: 40px;
+    }
+
+    #calibration-section {
+        width: 100%;
+    }
+
+    .calibration-boxes {
+        width: 100%;
+    }
+}
