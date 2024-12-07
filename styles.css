@@ -1,4 +1,5 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 body{
     height: auto;
     width: 99%;
@@ -27,6 +28,16 @@ html{
     #review-button:hover{
         transform: scale(1.1);
     }
+#services-anchor{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#return-home-anchor{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
 /* TOP SECTION AND NAV BAR BELOW HERE */
 #call-today-bar{
     width: 100%;
@@ -198,7 +209,6 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
         background: rgba(0, 0, 0, 0.253);
     }
         #ceramic-header{
@@ -236,7 +246,6 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
         background: rgba(0, 0, 0, 0.253);
     }
         #carbon-header{
@@ -468,7 +477,7 @@ html{
         justify-content: center;
     }
         #bottom-left{
-            width: 30%;
+            width: 33.3%;
         }
             #contact-here{
                 font-size: 30px;
@@ -489,8 +498,59 @@ html{
             #email-anchor{
                 color: red;
             }
+            #facebook-bottom{
+                width: 90px;
+                height: 90px;
+                font-size: 80px;
+                color: rgba(0, 0, 255, 0.329);
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        #bottom-middle{
+            width: 33.3%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+            #location-comforts{
+                width: 100%;
+                height: 30%;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+                #comforts-header{
+                    width: 100%;
+                    height: 10%;
+                    color: white;
+                    font-size: 30px;
+                    text-decoration: underline;
+                }
+                .comfort-headers{
+                    width: 100%;
+                    height: 10%;
+                    color: white;
+                    font-size: 20px;
+                }
+            #store-front-img{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                #store-front-image{
+                    width: auto;
+                    height: 90%;
+                }
         #bottom-right{
-            width: 70%;
+            width: 33.3%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -525,26 +585,24 @@ html{
                         justify-content: center;
                         flex-direction: column;
                     }
-                        #located-at{
+                        #located-at-header{
                             color: white;
                             font-size: 30px;
                             width: 100%;
                             height: 50%;
                         }
-                        #location-address{
-                            color: white;
-                            font-size: 25px;
-                            width: 100%;
-                            height: 50%;
-                        }
                     #map-container{
-                        width: 50%;
+                        width: 100%;
                         height: 80%;
                     }
                         #map{
                             width: 100%;
                             height: 100%;
                         }
+
+
+
+/*SECOND PAGE BELOW*/
 /* SERVICES CONTAINER */
 #section-one-services{
     width: 100%;
@@ -650,7 +708,12 @@ html{
     #services-two, #services-three, #services-four, #services-five, #services-six, #services-seven, #services-eight, #services-nine, #services-ten, #services-eleven, #services-twelve, #services-thirteen, #services-fourteen{
         display: none;
     }
-            
+    /*ADAS SECTION BELOW */
+    #ADAS-section{
+        width: 100%;
+        height: 700px;
+        border: 1px solid black;
+    }
 
 
 
